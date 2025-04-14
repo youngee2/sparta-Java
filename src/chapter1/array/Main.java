@@ -32,13 +32,30 @@ public class Main {
         String[] strArr = new String[2];
 
         //논리형 배열 선언
-        boolean[] booleanArr=new boolean[3];
-
+        //boolean[] booleanArr=new boolean[3];
+        /*
         for(int i=0; i<arr3.length; i++){
             System.out.println("인덱스: "+i+"의 값:"+arr3[i]);
         }
 
+         */
+        //향상된 for문
+        //arr[100][200][300][400][500]
+        for(int a:arr){
+            System.out.println("값: "+a);
+        }
 
+
+       // boolean[][] board = new boolean[2][3];
+        // [] [] []
+        // [] [] []
+
+        boolean[][] board = {
+                {true, false},
+                {false, true}
+        };
+
+        System.out.println(board[0][0]);
 
 
     }
